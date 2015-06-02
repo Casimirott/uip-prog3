@@ -1,0 +1,3 @@
+modo interactivo: se puede usar para correr un codigo linea por linea que no sea muy tedioso.
+
+modo normal: se usa desde un notpad y se usa para correr un codigo mas denso y mas tedioso.
