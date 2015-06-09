@@ -1,0 +1,11 @@
+print("\tMANEJO DE COMISIONES\n")
+name=(input("Ingresa tu nombre: "))
+ven1=float(input("Ingresa tu Venta del primer mes: "))
+ven2=float(input("Ingresa tu venta del segundo mes: "))
+ven3=float(input("Ingresa tu venta del tercer mes: "))
+tot=float(ven1)+float(ven2)+float(ven3)
+com=tot*0.125
+print("\tINFORME DE COMISIONES")
+print("Vendedor\tVentas\tComision")
+print("--------\t-------\t-------")
+print(name+"\t"+str(tot)+"\t"+str(com))
