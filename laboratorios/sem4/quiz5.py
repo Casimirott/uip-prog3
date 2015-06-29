@@ -1,12 +1,11 @@
 print("\tStartup ABC\n")
 print("\tLista de Supermecados\n")
-num=0
 lista=[]
 print("1.Agregue Productos a la lista")
 print("2.Elimine Productos de la lista")
 print("3.Ver los Productos de la lista")
 print("4.Salir")
-while num<=4:
+while op<=4:
     op=int(input("Ingrese su opcion\n"))
     if op==1:
         inc=input("Ingrese Elemento\n")
