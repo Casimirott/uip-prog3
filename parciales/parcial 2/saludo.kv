@@ -1,0 +1,56 @@
+<Principal>:
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'login.jpg'
+
+    BoxLayout:
+        height: "40dp"
+		size_hint_y: None
+        pos_hint:{'center_x': .5,'center_y': .60}
+        Label:
+            text:('Nombre: ')
+            size_hint_x: 50
+            font_size: 25
+        TextInput:
+            id: nombre
+            size_hint_x: 50
+            multiline: False
+    Button:
+        text:('Siguiente')
+        size_hint:(None, None)
+        size:(250, 50)
+        pos_hint:{'center_x': .5,'center_y': .40}
+        on_release:
+            root.manager.current=('bienvenido')
+            root.mostrar()
+
+<Bienvenido>:
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'cuadro.jpg'
+    Label:
+        text:('[b]Hola[/b]')
+        markup: True
+        font_size: 50
+        size_hint:(None, None)
+        size:(100, 44)
+        pos_hint:{'center_x': .5 , 'center_y': .80}
+    Label:
+        #text:('[b][/b]'+root.nombre)
+        markup: True
+        font_size: 25
+        size_hint:(None, None)
+        size:(100, 44)
+        pos_hint:{'center_x': .5 , 'center_y': .60}
+    Button:
+        text:('Volver')
+        size_hint:(None, None)
+        size:(250, 50)
+        pos_hint:{'center_x': .5,'center_y': .40}
+        on_release:
+            root.manager.current=('principal')
+            root.mostrar()
